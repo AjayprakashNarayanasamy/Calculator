@@ -26,8 +26,8 @@ const [values1,setValues]=React.useState({
     <div className="App">
       <h3> Calculator  </h3>
     <form onSubmit={(e) => handleSubmit(e)}>
-      Input value1 <input type="text" onChange={(e)=>{setValues(state.num1=(e.target.value))}} name="num1" /><br/><br/>
-      Input value2<input type="text" onChange={(e)=>{setValues(state.num2=e.target.value)}} name="num2"/><br/><br/>
+      Enter the value 1  <input type="text" onChange={(e)=>{setValues(state.num1=(e.target.value))}} name="num1" /><br/><br/>
+      Enter the value 2<input type="text" onChange={(e)=>{setValues(state.num2=e.target.value)}} name="num2"/><br/><br/>
       <div>
       <button onClick={() => dispatch({ type: 'add',  })}>
         
@@ -59,7 +59,7 @@ const [values1,setValues]=React.useState({
       <button type="reset" onClick={() => dispatch({ type: 'reset' })}> Reset </button>{' '}
       <br /> <br /><br /> <br />
       </div>
-      Result: {state.count} <br /> <br />
+     Output: {state.count} <br /> <br />
       &nbsp;
 </form>
      
